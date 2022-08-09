@@ -1,0 +1,354 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+/*Boot CSS**/
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+} 
+
+.w25{
+	width: 25%;
+	float: left;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	float: left;
+	width: 50%;
+}
+
+.w30{
+	width: 30%;
+}
+
+.w70{
+	width: 70%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clear{clear:  both;}
+
+.text-center{ text-align: center; }
+
+/**Estilizacao do sit**/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3033; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3033; 
+}
+
+html,body{
+	height: 100%;
+}
+
+body{
+	background: rgb(240, 240, 240);
+	border-radius: 20px;
+}
+
+.container{
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.box{
+	background: white;
+	padding: 30px 15px;
+	margin: 20px ;
+	border-radius: 15px;
+}
+
+header{
+	background-image: linear-gradient(to right, #2B83E5, #A5F76F);
+	padding: 23px 30px;
+}
+
+header .logo a{
+	color: white;
+	font-size: 33px;
+	font-weight: 800;
+	text-decoration: none;
+
+}
+
+header .form-login input[type=text],
+header .form-login input[type=password]{
+	height: 45px;
+	color: #000712;
+	padding-left: 17px;
+	border-radius: 28px;
+	width: 250px;
+	font-weight: 400;
+	font-size: 13px;
+	margin-top: 8px;
+	border: 0;
+	outline: none;
+	background: white;
+}
+
+header .form-login input[type=submit]{
+	cursor: pointer;
+	height: 45px;
+	background: #66bf32;
+	color: white;
+	border-radius: 28px;
+	border: 0px;
+	width: 120px;
+	font-weight: 600;
+	font-size: 17px;
+	margin-left: 8px;
+}
+
+.cadastro{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	
+}
+
+h2.title{
+ font-weight: 700;
+	color: rgb(60, 60, 60);
+	font-size: 20px;
+	border-bottom: 3px solid rgb(60, 60, 60);
+}
+
+section.cadastro h2{
+	font-weight: 700;
+	color: rgb(60, 60, 60);
+	font-size: 30px;
+	border-bottom: 3px solid rgb(60, 60, 60);
+	text-align: center;
+}
+
+section.cadastro form{
+	margin-top: 30px;
+}
+
+section.cadastro input[type=text],
+section.cadastro input[type=password]{
+	width: 100%;
+	height: 45px;
+	padding-left: 17px;
+	border-radius: 28px;
+	font-weight: 400;
+	font-size: 13px;
+	color: #000712;
+	outline: none;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+section.cadastro p{
+	font-weight: 700;
+	color: rgb(60, 60, 60);
+	font-size: 17px;
+	margin: 8px 0;
+}
+
+section.cadastro input[type=file]{
+	margin-bottom: 30px;
+}
+
+section.cadastro input[type=submit]{
+	cursor: pointer;
+	height: 45px;
+	background: #66bf32;
+	color: white;
+	border-radius: 28px;
+	border: 0px;
+	width: 180px;
+	font-weight: 600;
+	font-size: 17px;
+	margin-left: 8px;
+	display: block;
+	margin: 0 auto;
+}
+
+.btn-opt-menu a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 10px;
+	position: relative;
+	margin-left: 17px;
+}
+
+
+.btn-opt-menu a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	height: 3px;
+	width: 0px;
+	border-radius: 2px;
+	background-color: #fff;
+	transition: 0.4s ease;
+}
+
+.btn-opt-menu a:hover::after{
+	width: 100%;
+}
+
+.container-img{
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+}
+
+.container-img a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.container-img img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+.container-img h1{
+	font-weight: 700;
+	color: rgb(60, 60, 60);
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+section.comunidade .membro-listagem .box-imagem{
+	margin-top: 25px;
+	display: flex;
+  align-items:center;
+}
+
+section.comunidade .membro-listagem .box-imagem a{
+	display: inline-block;
+	text-decoration: none;
+} 
+
+section.comunidade .membro-listagem img{
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+}
+
+section.comunidade .membro-listagem h1{
+	font-weight: 700;
+	color: rgb(60, 60, 60);
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+.btn-a-adicionar{
+	display: flex;
+  align-items:center;
+}
+
+.btn-a-adicionar a{
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+  margin-top: 37px;
+  background: #A5F76F;
+	border-radius: 15px;
+	padding: 8px 30px;
+	margin-left: 8px;
+}
+
+section.feed textarea{
+	margin-top: 25px;
+	width: 100%;
+	height: 45px;
+	padding: 14px 17px;
+	border-radius: 28px;
+	background: rgb(240, 240, 240);
+	border: 0;
+	outline: none;
+	resize: vertical;
+}
+
+section.feed input[type=submit]{
+	cursor: pointer;
+	padding: 8px 30px;
+	background: #2B83E5;
+	color: white;
+	border-radius: 28px;
+	border: 0px;
+	float: right;
+	font-weight: 600;
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.post-single-user{
+	margin-bottom: 20px;
+}
+
+.img-user-post{
+	float: left;
+ 
+}
+
+.img-user-post img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.post-user-single{
+	float: left;
+	width: calc(100% - 70px);
+	padding: 4px 10px;
+}
+
+.post-user-single h1{
+	padding: 3px 5px;
+	font-weight: 700;
+	color: rgb(15, 15, 15);
+	font-size: 15px;
+}
+
+.post-user-single p{
+	font-weight: 400;
+	color: rgb(60, 60, 60);
+	font-size: 15px;
+	padding: 0 5px;
+}
